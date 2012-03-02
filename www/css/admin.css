@@ -1,0 +1,72 @@
+body
+{
+	font-size: 14px;
+}
+
+#wrapper {
+	margin-left:100px;
+	margin-top:30px;
+	width:900px;
+}
+
+.breadcrumb
+{
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+
+.admin-form label
+{
+}
+
+.admin-form div
+{
+	padding-bottom: 10px;
+}
+
+table
+{
+	font-size: 12px;
+}
+table td
+{
+	padding: 0 5px 0 5px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.stats .row {
+	clear: left;
+}
+.stats .title {
+	width: 250px;
+	float: left;
+}
+.stats .value {
+	float: left;
+}
+.h4-with-details {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+.h4-details {
+	font-size: 10px;
+}
+
+.admin-index-cat {
+	padding-bottom: 10px;
+}
+
+.admin-index-cat .title {
+	font-weight: bold;
+	padding-left: 0;
+}
+
+.admin-index-cat div {
+	padding-left: 10px;
+}

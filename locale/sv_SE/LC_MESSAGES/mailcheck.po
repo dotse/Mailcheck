@@ -1,0 +1,864 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MailCheck\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#############################
+# General translation
+#############################
+msgid "SMTP"
+msgstr "SMTP-server"
+
+msgid "DNS"
+msgstr "DNS"
+
+#############################
+# Plugin translation
+#############################
+
+msgid "Connection timed out"
+msgstr "Uppkopplingen fick en timeout"
+
+# MXRecord
+msgid "MXRecord"
+msgstr "MX-record"
+
+msgid "Starting MX record lookup against %s"
+msgstr "Påbörjar MX-record uppslagning mot %s"
+
+msgid "Found host %s (%s), priority %s"
+msgstr "Hittade värdnamnet %s (%s), prioritet %s"
+
+msgid "Only one record found, two or more is recommended"
+msgstr "Endast ett MX-record hittat, två eller fler är rekommenderat"
+
+msgid "Finished MX record lookup against %s"
+msgstr "Avslutar test av MX-record mot %s"
+
+msgid "more info mx record"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_mx_record:start\" target=\"_blank\">Om MX-record</a>"
+
+
+# MXRecordDiffering
+msgid "MXRecordDiffering"
+msgstr "Olika MX-records"
+
+msgid "Starting differing MX records test"
+msgstr "Påbörjar testa av olika MX-records"
+
+msgid "Getting %s record from name server %s (%s) for MX record %s"
+msgstr "Hämtar %s-record från namnservern %s (%s) för MX-record %s"
+
+msgid "Could not get %s record for MX record %s from name server %s (%s)"
+msgstr "Misslyckades att hämta %s-record för MX-record %s från namnservern %s (%s)"
+
+msgid "Name server %s (%s) reported the following %s records %s for MX record %s"
+msgstr "Namnservern %s (%s) rapporterade följande %s-record %s för MX-record %s"
+
+msgid "Name server %s (%s) reported the following %s record %s for MX record %s"
+msgstr "Namnservern %s (%s) rapporterade följande %s-record %s för MX-record %s"
+
+msgid "Name servers %s and %s reports different %s records for MX record %s"
+msgstr "Namnservrarna %s och %s rapporterade olika %s-record för MX-record %s"
+
+msgid "Finished differing MX records test"
+msgstr "Avslutar test av olika MX-record"
+
+
+# MXRecordPublic
+msgid "MXRecordPublic"
+msgstr "Publika MX-record"
+
+msgid "Starting public MX record test"
+msgstr "Påbörjar test av publika MX-record"
+
+msgid "Checking %s (%s)"
+msgstr "Kontrollerar %s (%s)"
+
+msgid "%s is a private IP"
+msgstr "%s är en privat IP-address"
+
+msgid "All IP addresses are private"
+msgstr "Alla IP-adresserna är privata"
+
+msgid "%s IP address is private"
+msgstr "IP-adressen %s är privat"
+
+msgid "%s IP addresses are private"
+msgstr "%s IP-adresserna är privata"
+
+msgid "%s is a public IP address"
+msgstr "%s är en publik IP-adress"
+
+msgid "Primary MX record is private"
+msgstr "Primärt MX-record är privat"
+
+msgid "Finished public MX record test"
+msgstr "Avslutar test av publika MX-record"
+
+msgid "more info public mx record"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_mx_record_public:start\" target=\"_blank\">Om publika MX-record</a>"
+
+# MXRecordDuplicate
+msgid "MXRecordDuplicate"
+msgstr "Duplicerade IP-adresser"
+
+msgid "Starting duplicate IP for MX record test"
+msgstr "Påbörjar test av duplicerade IP-adresser"
+
+msgid "Duplicate IP for MX record %s (%s) found"
+msgstr "Duplicerad IP-adress MX-record %s (%s)"
+
+msgid "No duplicate IP for MX records found"
+msgstr "Inga duplicerade IP-address påträffades"
+
+msgid "Finished duplicate IP for MX record test"
+msgstr "Avslutar test av duplicerade IP-adresser"
+
+msgid "more info duplicate mx record"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_mx_record_duplicate:start\" target=\"_blank\">Om duplicerade IP-adresser</a>"
+
+
+# MXRecordCNAME
+msgid "MXRecordCNAME"
+msgstr "MX-record CNAME"
+
+msgid "Starting CNAME test"
+msgstr "Påbörjar test av CNAME"
+
+msgid "%s (%s) is a CNAME"
+msgstr "%s (%s) är ett CNAME"
+
+msgid "%s (%s) is not a CNAME"
+msgstr "%s (%s) är inte ett CNAME"
+
+msgid "Finished CNAME test"
+msgstr "Avslutar test av CNAME"
+
+msgid "more info cname mx record"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_mx_record_cname:start\" target=\"_blank\">Om CNAME</a>"
+
+
+# ARecord
+msgid "ARecord"
+msgstr "A-record"
+
+msgid "Starting A record lookup against %s"
+msgstr "Påbörjar test av A-record mot %s"
+
+msgid "%s is not a CNAME, A is %s"
+msgstr "%s är inte ett CNAME, A är %s"
+
+msgid "%s CNAME is %s"
+msgstr "%s CNAME är %s"
+
+msgid "No A record found for %s"
+msgstr "Inget A-record för %s påträffades"
+
+msgid "A record is missing for %s"
+msgstr "A-record saknas för %s"
+
+msgid "Finished A record lookup against %s"
+msgstr "Avslutar test mot %s"
+
+
+# Connection
+msgid "Connection"
+msgstr "Uppkoppling"
+
+msgid "Starting connection test"
+msgstr "Påbörjar test av uppkopplingen"
+
+msgid "Test could not be executed"
+msgstr "Testet kunde inte köras"
+
+msgid "Connection to %s (%s) could not be established"
+msgstr "Uppkoppling mot %s (%s) kunde inte etableras"
+
+msgid "Connection time to %s above %s second (%ss)"
+msgstr "Uppkollingstid till %s är över %s sekund (%ss)"
+
+msgid "Connection test against %s (%s) successful in %ss"
+msgstr "Uppkopplingstest mot %s (%s) lyckades på %ss"
+
+msgid "Could not establish connection with any server"
+msgstr "Lyckades inte koppla upp mot någon server"
+
+msgid "All connection times are above %s second"
+msgstr "Alla uppkopplingstider är över %s sekunder"
+
+msgid "Finished connection test"
+msgstr "Avslutar test av uppkopplingen"
+
+msgid "more info connection time"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_connection:start\" target=\"_blank\">Om uppkopplingar</a>"
+
+
+# UserScanning
+msgid "UserScanning"
+msgstr "Användarscanning"
+
+msgid "Started user scanning test"
+msgstr "Påbörjade test"
+
+msgid "Failed to connect to %s (%s)"
+msgstr "Misslyckades att koppla upp mot %s (%s)"
+
+msgid "User scanning %s (%s) failed\n%s"
+msgstr "Användarscanning mot %s (%s) misslyckades\n%s"
+
+msgid "No standard greeting on %s (%s)"
+msgstr "Ingen standardhälsning på %s (%s)"
+
+msgid "User scanning %s (%s)"
+msgstr "User scanning %s (%s)"
+
+msgid "User scanning %s (%s) completed"
+msgstr "Användarscanning mot %s (%s) avslutad"
+
+msgid "Finished user scanning test"
+msgstr "Avslutar test"
+
+msgid "more info user scanning"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_userscanning:start\" target=\"_blank\">Om användarscanning</a>"
+
+
+# HostnameGreeting
+msgid "HostnameGreeting"
+msgstr "Värdnamnshälsning"
+
+msgid "Starting hostname greeting test"
+msgstr "Påbörjar test av hälsningar"
+
+msgid "Failed to connect to mail server %s (%s)"
+msgstr "Misslyckades att koppla upp mot mailservern %s (%s)"
+
+msgid "IP of hostname (%s) in greeting message doesn't match mail server IP (%s)"
+msgstr "Värdnamnets IP-adress (%s) i hälsningsfrasen matchar inte serverns IP-adress (%s)"
+
+msgid "Valid hostname (%s) found in greeting message"
+msgstr "Ett giltigt värdnamn (%s) fanns i hälsningsfrasen"
+
+msgid "Hostname is missing in greeting line"
+msgstr "Värdnamn saknas i hälsningsfrasen"
+
+msgid "Failed to resolve hostname in greeting message"
+msgstr "Misslyckades att slå upp värdnamnet i hälsningsfrasen"
+
+msgid "Finished hostname greeting test"
+msgstr "Avslutar test"
+
+msgid "more info hostname greeting"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_hostname_greeting:start\" target=\"_blank\">Om hälsningsfraser</a>"
+
+
+# LowPort
+msgid "LowPort"
+msgstr "Lågt portnummer"
+
+msgid "Starting low port test"
+msgstr "Påbörjar test av låga portnummer"
+
+msgid "Connection against %s (%s) successful from port %s"
+msgstr "Uppkopplingen mot %s (%s) lyckades från port %s"
+
+msgid "Connection against %s (%s) failed from port %s"
+msgstr "Uppkopplingen mot %s (%s) mittlyckades från port %s"
+
+msgid "Finished low port test"
+msgstr "Avslutar test"
+
+msgid "more info low port"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_low_port:start\" target=\"_blank\">Om låga portnummer</a>"
+
+
+# MXRecordPTR
+msgid "MXRecordPTR"
+msgstr "MX-record PTR"
+
+msgid "Starting test"
+msgstr "Påbörjar test"
+
+msgid "Could not find %s record for MX record %s"
+msgstr "Hittade inget %s-record för MX-record %s"
+
+msgid "Could not find PTR record for %s"
+msgstr "Hittade inget PTR-record för %s"
+
+msgid "Could not resolve PTR record %s"
+msgstr "Misslyckades att slå upp PTR-record %s"
+
+msgid "PTR record (%s) matches the %s record (%s)"
+msgstr "PTR-recrod (%s) matchar %s-record (%s)"
+
+msgid "PTR record does not match the %s record (%s)"
+msgstr "PTR-record matchar inte %s-record (%s)"
+
+msgid "Finished test"
+msgstr "Avslutar test"
+
+msgid "more info ptr mx record"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_mx_record_ptr:start\" target=\"_blank\">Om PTR</a>"
+
+
+# OpenRelay
+msgid "OpenRelay"
+msgstr "Open relay"
+
+msgid "Started open relay test"
+msgstr "Started open relay test"
+
+# already declared at 187
+#msgid "Failed to connect to %s (%s)"
+#msgstr "Failed to connect to %s (%s)"
+
+msgid "Starting open relay tests against %s"
+msgstr "Starting open relay tests against %s"
+
+msgid "Warning connection reset by peer.."
+msgstr "Warning connection reset by peer.."
+
+msgid "Warning broken pipe, aborting subtest.."
+msgstr "Warning broken pipe, aborting subtest.."
+
+msgid "Test %s on host %s:\n%s"
+msgstr "Test %s on host %s:\n%s"
+
+msgid "Test %s FAILED on %s:\n%s"
+msgstr "Test %s FAILED on %s:\n%s"
+
+msgid "Finished open relay testing on %s"
+msgstr "Finished open relay testing on %s"
+
+msgid "All %s open relay tests against %s failed"
+msgstr "All %s open relay tests against %s failed"
+
+msgid "One of %s open relay test against %s failed"
+msgstr "One of %s open relay test against %s failed"
+
+msgid "%s of %s open relay tests against %s failed"
+msgstr "%s of %s open relay tests against %s failed"
+
+msgid "Finished open relay test"
+msgstr "Finished open relay test"
+
+# SPF
+msgid "SPF"
+msgstr "SPF"
+
+msgid "Starting SPF-test"
+msgstr "Påbörjar SPF-test"
+
+# already defined
+#msgid "Test could not be executed"
+#msgstr "Test could not be executed"
+
+msgid "SPF-test failed for %s (%s)"
+msgstr "Testet misslyckades för %s (%s)"
+
+msgid "SPF-test returned: %s (%s), %s for %s (%s), email: %s"
+msgstr "SPF-test: %s (%s), %s för %s (%s), e-post: %s"
+
+msgid "Could not test any SPF record"
+msgstr "Kunde inte testa något SPF-record"
+
+msgid "SPF is valid from the server you use to send emails"
+msgstr "SPF är giltigt från den server som skickar e-post"
+
+msgid "SPF is enabled for domain"
+msgstr "SPF finns för den här domänen"
+
+msgid "Finished SPF-test"
+msgstr "Avslutar test"
+
+msgid "more info spf"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_spf:start\" target=\"_blank\">Om SPF</a>"
+
+# Blacklist
+msgid "Starting Blacklist-test"
+msgstr "Påbörjar test av svartlistningar"
+
+msgid "%s (%s) is listed on blacklist %s, result: %s, text: %s."
+msgstr "%s (%s) är svartlistad på %s, resultat: %s, text: %s."
+
+msgid "%s (%s) is not listed on blacklist %s."
+msgstr "%s (%s) är inte svartlistad på %s."
+
+msgid "All Blacklist-tests failed!"
+msgstr "Alla tester misslyckades!"
+
+msgid "Finished Blacklist-test"
+msgstr "Avslutar test"
+
+msgid "%s, subtest: %s in %s?"
+msgstr "%s, deltest: %s i %s?"
+
+msgid "more info blacklists"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_blacklist:start\" target=\"_blank\">Om svartlistor</a>"
+
+# StartTLS
+msgid "StartTLS"
+msgstr "StartTLS"
+
+msgid "Starting STARTTLS test"
+msgstr "Påbörjar test"
+
+msgid "STARTTLS successful on host %s (%s), %s %s"
+msgstr "STARTTLS lyckades på %s (%s), %s %s"
+
+msgid "STARTTLS failed on host %s (%s), %s %s"
+msgstr "STARTTLS misslyckades på %s (%s), %s %s"
+
+msgid "STARTTLS enabled"
+msgstr "STARTTLS tillgänglig"
+
+msgid "Server %s (%s) disconnected unexpectedly"
+msgstr "Servern %s (%s) stängde oväntat uppkopplingen"
+
+msgid "Finished STARTTLS test"
+msgstr "Avslutar test"
+
+msgid "more info starttls"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_starttls:start\" target=\"_blank\">Om STARTTLS</a>"
+
+
+# VerifyCert
+msgid "VerifyCert"
+msgstr "Verifierar SSL-certifikat"
+
+msgid "Starting to verify certificates"
+msgstr "Påbörjar test av certifikat"
+
+msgid "Starting test for host %s (%s)"
+msgstr "Startar test mot %s (%s)"
+
+msgid "NO TLS available for host %s"
+msgstr "TLS finns inte tillgängligt på %s"
+
+msgid "Failed to connect to host %s (%s)"
+msgstr "Uppkoppling mot %s (%s) misslyckades"
+
+msgid "Warning broken pipe.."
+msgstr "Uppkopplingen misslyckades.."
+
+msgid "Unable to perform handshake on host %s (%s)"
+msgstr "Misslyckades med handskakningen mot %s (%s)"
+
+msgid "Last SSL serial (%s) does not match current (%s)"
+msgstr "Förra serienummret (%s) matchar inte det nuvarande (%s)"
+
+msgid "Certificate on host %s (%s) has not been changed for over %s seconds"
+msgstr "Certifikatet på %s (%s) har inte ändrats på över %s sekunder"
+
+msgid "Certificate on host %s (%s) has expired (%s)"
+msgstr "Certifikatet på %s (%s) är inte giltigt längre (%s)"
+
+msgid "Certificate on host %s (%s) expires within one week (%s)"
+msgstr "Certifikatet på %s (%s) går ut inom en vecka (%s)"
+
+msgid "Certificate on host %s (%s) expires within one month (%s)"
+msgstr "Certifikatet på %s (%s) går ut inom en månad (%s)"
+
+msgid "Certificate on host %s (%s) is not valid before %s"
+msgstr "Certifikatet på %s (%s) blir giltigt först %s"
+
+msgid "Certificate on host %s (%s) is using few bits when encrypting (%s)"
+msgstr "Certifikatet på %s (%s) använder en svag kryptering (%s)"
+
+msgid "Certificate is valid:\n%s"
+msgstr "Certifikatet är giltigt:\n%s"
+
+msgid "Serial: %s"
+msgstr "Serienummer: %s"
+
+msgid "Bits: %s"
+msgstr "Bitar: %s"
+
+msgid "Not After: %s"
+msgstr "Inte efter: %s"
+
+msgid "Not Before: %s"
+msgstr "Inte före: %s"
+
+msgid "Country Name: %s"
+msgstr "Land: %s"
+
+msgid "State Or Province Name: %s"
+msgstr "Delstat eller landskap: %s"
+
+msgid "Locality Name: %s"
+msgstr "Lokalitet: %s"
+
+msgid "Organization Name: %s"
+msgstr "Organisationsnamn: %s"
+
+msgid "Organizational Unit Name: %s"
+msgstr "Organisationsenhet: %s"
+
+msgid "CommonName: %s"
+msgstr "Gemensamnt namn: %s"
+
+msgid "Email: %s"
+msgstr "E-post: %s"
+
+msgid "PEM:\n%s"
+msgstr "PEM:\n%s"
+
+msgid "Test on host %s:\n%s"
+msgstr "Test av %s:\n%s"
+
+msgid "Test FAILED on %s:\n%s"
+msgstr "Test av %s misslyckades:\n%s"
+
+msgid "Finished test for host %s (%s)"
+msgstr "Avslutar test mot %s (%s)"
+
+msgid "Finished certificates verification-test"
+msgstr "Avslutar test av certifikat"
+
+
+# StandardAddresses
+msgid "StandardAddresses"
+msgstr "Standardadresser"
+
+msgid "Started standard addresses test"
+msgstr "Påbörjar test av standardadressser"
+
+msgid "Standard addresses on %s (%s) failed\n%s"
+msgstr "Standardadresser på %s (%s) misslyckades\n%s"
+
+msgid "%s (%s) answering \"250\"."
+msgstr "%s (%s) svarar \"250\"."
+
+msgid "Standard addresses on %s (%s) completed."
+msgstr "Standardadresser på %s (%s) lyckades."
+
+msgid "Finished standard addresses test"
+msgstr "Avslutar test"
+
+msgid "more info verifycert"
+msgstr "För mer information: <a href=\"/wiki/doku.php?id=info_verifycert:start\" target=\"_blank\">Om certifikat</a>"
+
+
+#############################
+# Web translation
+#############################
+
+msgid "Home"
+msgstr "Hem"
+
+msgid "Your IP have started too many tests the last %s hours"
+msgstr "Din IP-adress har startat för många tester dem senaste %s timmarna"
+
+msgid "Too many tests started within the last %s seconds"
+msgstr "Det har startats för många tester dem senaste %s sekunderna"
+
+msgid "You are not allowed to test this domain"
+msgstr "Du får inte testa den här domänen"
+
+msgid "Domain has been tested too many times the last %s"
+msgstr "Domänen har testats för många gånger den senaste %s"
+
+# bug report
+msgid "Bug report"
+msgstr "Buggrapport"
+
+msgid "Your bug report has been received"
+msgstr "Din buggrapport har tagits emot"
+
+msgid "Description"
+msgstr "Beskrivning"
+
+msgid "Email (Optional)"
+msgstr "E-post (Frivillig)"
+
+msgid "Invalid email"
+msgstr "Ogilitig e-post"
+
+msgid "Fill in the code below"
+msgstr "Fyll i koden nedanför"
+
+msgid "Code"
+msgstr "Kod"
+
+msgid "Refresh code"
+msgstr "Ny kod"
+
+msgid "Wrong code"
+msgstr "Fel kod"
+
+msgid "Submit report"
+msgstr "Skicka rapport"
+
+msgid "Don't test me"
+msgstr "Testa inte mig"
+
+# dont test me
+msgid "Your domain will no longer be tested"
+msgstr "Din domän kommer inte testat mer"
+
+msgid "Invalid key used when trying to blacklist the domain"
+msgstr "Ogiltig nyckel använd vid svartlistning av domän"
+
+msgid "E-mail address"
+msgstr "E-postadress"
+
+msgid "Confirm email"
+msgstr "Bekräfta e-post"
+
+msgid "To disable further testing against your domain enter you're email address and click on the link in the email you'll recieve"
+msgstr "För att förhindra tester av din domän klickar du på länken i e-posten som skickas till din adress"
+
+msgid "Don't test me!"
+msgstr "Testa inte mig!"
+
+msgid "Please check your email and click on the link in the email to stop your domain from being tested"
+msgstr "Klicka på länken i e-posten som skickats till dig för att svartlista din domän"
+
+# site
+msgid "All tests are OK:"
+msgstr "Alla tester är OK:"
+
+msgid "All finished tests are OK:"
+msgstr "Alla avslutade tester är OK:"
+
+msgid "Warnings found in test:"
+msgstr "Testet innehåller varningar:"
+
+msgid "Errors found in the test:"
+msgstr "Teset innehåller fel:"
+
+msgid "Too many tests has been run against:"
+msgstr "För många tester har körts mot:"
+
+msgid "Test denied:"
+msgstr "Testet har blivit nekat:"
+
+msgid "Running test..."
+msgstr "Kör test..."
+
+msgid "Loading"
+msgstr "Laddar"
+
+msgid "Waiting for the test results to be loaded"
+msgstr "Väntar på att testresultat ska laddas färdigt"
+
+msgid "Test queued..."
+msgstr "Köat test..."
+
+msgid "Waiting for the test to start"
+msgstr "Väntar på att testet ska starta"
+
+msgid "Not found"
+msgstr "Finns ej"
+
+msgid "The test you are looking for doesn't exist"
+msgstr "Teset du leter efter finns inte"
+
+msgid "About cookies"
+msgstr "Om cookies"
+
+msgid "The website"
+msgstr "Webbplatsen"
+
+msgid "Please enter a valid email address"
+msgstr "Ange en giltig e-postadress"
+
+
+# index
+msgid "MailCheck FAQ"
+msgstr "MailCheck FAQ"
+
+msgid "MailCheck FAQ contents"
+msgstr "MailCheck FAQ"
+
+msgid "No tests will be run against your domain"
+msgstr "Inga test kommer köras mot den här domänen"
+
+msgid "No tests will be run against your domain, please contact us to allow tests against your domain again"
+msgstr "Inga tester kommer köras mot den här domänen. Kontakta oss för att tillåta tester igen"
+
+msgid "About MailCheck"
+msgstr "Om MailCheck"
+
+
+# site
+msgid "A service from .SE"
+msgstr "A tjänst från .SE"
+
+msgid "Test your Mail-server and find errors"
+msgstr "Testa din mailserver och hitta fel"
+
+msgid "E-mail address:"
+msgstr "E-postadress"
+
+msgid "Enter your e-mail address in the field above to test your server."
+msgstr "Ange din e-postadress i fältet ovan för att testa din server."
+
+msgid "Test now"
+msgstr "Testa nu"
+
+msgid "I don't want to be tested"
+msgstr "Jag vill inte bli testad"
+
+msgid "Technical info"
+msgstr "Teknisk information"
+
+msgid ".SE (The Internet Infrastructure Foundation)"
+msgstr ".SE (Stiftelsen för Internetinfrastruktur)"
+
+
+# view-test
+msgid "Basic results"
+msgstr "Enkelt resultat"
+
+msgid "Advanced results"
+msgstr "Avancerat resultat"
+
+msgid "Link to this test:"
+msgstr "Länk till det här teset:"
+
+msgid "Test history"
+msgstr "Historik"
+
+msgid "Error loading history"
+msgstr "Fel vid laddning av historik"
+
+msgid "No test history found"
+msgstr "Det finns ingen historik"
+
+msgid "Page"
+msgstr "Sida"
+
+msgid "Explanation"
+msgstr "Förklarning"
+
+msgid "Test was ok"
+msgstr "Testet är ok"
+
+msgid "Test contains warnings"
+msgstr "Testet innehåller varningar"
+
+msgid "Test contains errors"
+msgstr "Testet innehåller fel"
+
+msgid "Test was not performed"
+msgstr "Testet kunde inte genomföras"
+
+msgid "Gold star awarded"
+msgstr "Guldstjärna tilldelad"
+
+msgid "Recommendation"
+msgstr "Rekommendation"
+
+# bug rep
+msgid "Thank you,"
+msgstr "Tack,"
+
+# site
+msgid "Run outgoing mail tests"
+msgstr "Kör utgående tester"
+
+msgid "Do you use a local email client like Outlook or Thunderbird? Or, do you use a web based email client?"
+msgstr "Använder du en lokal e-postklient Outlook eller Thunderbird?  Eller, använder du en webbaserd klient?"
+
+msgid "Local email client"
+msgstr "Lokal e-postklient"
+
+msgid "Web based client"
+msgstr "Webbaserad klient"
+
+msgid "or"
+msgstr "eller"
+
+msgid "To start the test you must send an email using your local email client. When the email is sent, click on the \"Start Test\" button."
+msgstr "För att starta testet måste du skicka ett mail med din lokala e-postklient. Efter att du har skickat det trycker du på \"Starta teset\""
+
+msgid "Click on the link below to send the email:"
+msgstr "Klicka på länken nedan för att skicka mailet:"
+
+msgid "Send email using Outlook"
+msgstr "Skicka mailet med Outlook"
+
+msgid "Send email using other clients"
+msgstr "Skicka mail med en annan klient"
+
+msgid "Start your email client and send an email with the following settings:"
+msgstr "Starta din emailklient och skicka ett mail med följande inställningar:"
+
+msgid "To:"
+msgstr "Till:"
+
+msgid "Subject:"
+msgstr "Ämne:"
+
+msgid "Body:"
+msgstr "Text:"
+
+msgid "Back"
+msgstr "Tillbaka"
+
+msgid "Running..."
+msgstr "Kör..."
+
+msgid "gold stars awarded"
+msgstr "guldstjärnor tilldelade"
+
+msgid "for excellence in mail server setup"
+msgstr "för exemplarisk installation av mailservrar"
+
+
+# maint
+msgid "Maintenance"
+msgstr "Underhåll"
+
+msgid "We are currently performing maintenace on the system. Please check back later."
+msgstr "Vi håller för närvarande på att underhålla systemet. Kom tillbaka om en liten stund igen."
+
+
+msgid "The Website"
+msgstr "Webbsidan"
+
+msgid "This site is operated by Stiftelsen för Internetinfrastruktur (.SE). If you have any questions about this site or it's content, please send an e-mail to "
+msgstr "Den här sidan drivs av Stiftelsen för Internetinfrastruktur (.SE). Har du några frågor kan du skicka e-post till "
+
+msgid "Mailcheck is a free, automated online test tool which lets users test many different quality-related aspects of their email setup."
+msgstr "Mailcheck är ett gratis, automatiserat onlineverktyg som låter användare testa många kvalité-relaterade aspekter av mailservrar."
+
+msgid "Mailcheck aims to improve the overall quality of email related services on the Internet by pointing out possible configuration problems, software flaws or standards violations to system administrators and end users."
+msgstr "Mailcheck försöker förbättra kvalitén på e-postrelaterade tjänser på Internet genom att peka ut potentialla problem med konfigurationer, mjukfarufel och brott mot standarder åt systemadministratörer och slutanvändare."
+
+msgid "This website uses cookies to manage sessions. A cookie is a little text file that the visited website saves on the user’s computer. Information from the file is utilized, for example, to facilitate use of the website."
+msgstr "Den här webbplatsen använder cookies för hålla reda på sessioner. En cookie är en liten textfil som webbsidan sparar på användarens dator. Informationen från filen används för att underlätta användandet av webbplatsen."
+
+msgid "Those who do not want to accept cookies can set up their browsers so that they automatically reject the storage of cookies or inform the user each time a website requests the storage of a cookie. Through browser functions, it is also usually possible to have previously stored cookies erased."
+msgstr "Användare som inte vill acceptera cookies kan ändra inställningarna i sin webbläsare för att automatiskt kasta bort cookies eller informera när webbplatsen vill skapa cookies. Det brukar också vara vanligt att webbläsare tillhandahåller möjlighten att ta bort cookies som skapats vid tidigare besök."
+
+msgid "Language"
+msgstr "Språk"
+
+msgid "days"
+msgstr "dagar"
+
+msgid "hours"
+msgstr "timmar"
+
+msgid "minutes"
+msgstr "minuter"
+
+msgid "seconds"
+msgstr "sekunder"
+
+msgid "day"
+msgstr "dagen"
+
+msgid "hour"
+msgstr "timmen"
+
+msgid "minute"
+msgstr "minuten"
+
+msgid "second"
+msgstr "sekunden"

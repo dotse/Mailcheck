@@ -1,0 +1,83 @@
+
+Python code requirements
+========================
+
+# Install PIP
+wget http://pypi.python.org/packages/source/p/pip/pip-1.0.tar.gz
+tar xvzf pip-1.0.tar.gz && cd pip-1.0/ && sudo python setup.py install && cd ..
+
+# Install libs
+apt-get install libadns1 libadns1-dev
+
+# Install Python requirements
+pip install -r requirements.txt
+
+
+MailCheck settings
+==================
+In config/config.ini/.php replace <ENTER EMAIL HERE> with a valid email address that receives problem reports.
+Also, replace all <ENTER USERNAME HERE> and <ENTER PASSWORD HERE> with real information for the specific services.
+
+MailCheck root folder must also be on the PYTHONPATH environment variable for the user running it.
+
+export PYTHONPATH=$PYTHONPATH:/var/www/mailcheck
+
+
+Batch mode
+==========
+
+# Run a batch with three concurrent test, outputting result to the file "result.json" and read emails from
+# "emails.csv" file.
+python engine/batch.py -n 3 -o result.json users.exmaple.csv
+
+-n  controls number of concurrent tests that run
+-o  file where results is outputted in JSON
+-v  control verbosity (info, warning, error, debug)
+--post-test-sleep=  add a sleep after each test to space out runs. Default is 0 seconds.
+
+
+CSV file format
+---------------
+CSV format is just a single column with email addresses.
+
+# emails.csv
+test@iis.se
+test@gatorhole.com
+
+
+Result JSON format
+-------------------
+The result from a batch run uses the following JSON format:
+
+{
+  # Overall status for each test run in the batch
+  "status": {
+    "unknown": 0,
+    "warning": 0,
+    "ok": 0,
+    "error": 1
+  },
+  # Number of results for individual sub-test
+  "subtests": {
+    "status": {
+      "unknown": 0,
+      "warning": 0,
+      "ok": 1,
+      "error": 1
+    }
+  },
+
+  # Total number of goldstar handed out
+  "gold_stars_count": 1,
+  # List with all types of gold stars found during the test. Can be zero or more
+  # depending on that gold stars were found
+  "gold_stars": {
+    "SPF is enabled for domain": 1
+  },
+
+  # Batch start time in UTC formatted in ISO 8601 format
+  "start_time": "2012-02-03T08:43:29.059111",
+  # Batch end time in UTC formatted in ISO 8601 format
+  "end_time": "2012-02-03T08:43:30.094293"
+}
+

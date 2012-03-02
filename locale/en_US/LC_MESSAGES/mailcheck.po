@@ -1,0 +1,563 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MailCheck\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#############################
+# General translation
+#############################
+msgid "SMTP"
+msgstr "SMTP server"
+
+msgid "DNS"
+msgstr "DNS"
+
+#############################
+# Site translation
+#############################
+
+msgid "Home"
+msgstr "Home"
+
+
+msgid "Your IP have started too many tests the last %s hours"
+msgstr "Your IP have started too many tests the last %s hours"
+
+msgid "Too many tests started within the last %s seconds"
+msgstr "Too many tests started within the last %s seconds"
+
+msgid "You are not allowed to test this domain"
+msgstr "You are not allowed to test this domain"
+
+msgid "Domain has been tested too many times the last %s"
+msgstr "Domain has been tested too many times the last %s"
+
+#############################
+# Plugin translation
+#############################
+
+msgid "Connection timed out"
+msgstr "Connection timed out"
+
+# MXRecord
+msgid "MXRecord"
+msgstr "MX record"
+
+msgid "Starting MX record lookup against %s"
+msgstr "Starting MX record lookup against %s"
+
+msgid "Found host %s (%s), priority %s"
+msgstr "Found host %s (%s), priority %s"
+
+msgid "Only one record found, two or more is recommended"
+msgstr "Only one record found, two or more is recommended"
+
+msgid "Finished MX record lookup against %s"
+msgstr "Finished MX record lookup against %s"
+
+msgid "more info mx record"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_mx_record:start\" target=\"_blank\">About MX-record</a>"
+
+
+# MXRecordDiffering
+msgid "MXRecordDiffering"
+msgstr "Differing MX records"
+
+msgid "Starting differing MX records test"
+msgstr "Starting differing MX records test"
+
+msgid "Getting %s record from name server %s (%s) for MX record %s"
+msgstr "Getting %s record from name server %s (%s) for MX record %s"
+
+msgid "Could not get %s record for MX record %s from name server %s (%s)"
+msgstr "Could not get %s record for MX record %s from name server %s (%s)"
+
+msgid "Name server %s (%s) reported the following %s records %s for MX record %s"
+msgstr "Name server %s (%s) reported the following %s records %s for MX record %s"
+
+msgid "Name server %s (%s) reported the following %s record %s for MX record %s"
+msgstr "Name server %s (%s) reported the following %s record %s for MX record %s"
+
+msgid "Name servers %s and %s reports different %s records for MX record %s"
+msgstr "Name servers %s and %s reports different %s records for MX record %s"
+
+msgid "Finished differing MX records test"
+msgstr "Finished differing MX records test"
+
+
+# MXRecordPublic
+msgid "MXRecordPublic"
+msgstr "Public MX records"
+
+msgid "Starting public MX record test"
+msgstr "Starting public MX record test"
+
+msgid "Checking %s (%s)"
+msgstr "Checking %s (%s)"
+
+msgid "%s is a private IP"
+msgstr "%s is a private IP"
+
+msgid "All IP addresses are private"
+msgstr "All IP addresses are private"
+
+msgid "%s IP address is private"
+msgstr "%s IP address is private"
+
+msgid "%s IP addresses are private"
+msgstr "%s IP addresses are private"
+
+msgid "%s is a public IP address"
+msgstr "%s is a public IP address"
+
+msgid "Primary MX record is private"
+msgstr "Primary MX record is private"
+
+msgid "Finished public MX record test"
+msgstr "Finished public MX record test"
+
+msgid "more info public mx record"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_mx_record_public:start\" target=\"_blank\">About public MX-records</a>"
+
+
+# MXRecordDuplicate
+msgid "MXRecordDuplicate"
+msgstr "Duplicate IP for MX record"
+
+msgid "Starting duplicate IP for MX record test"
+msgstr "Starting duplicate IP for MX record test"
+
+msgid "Duplicate IP for MX record %s (%s) found"
+msgstr "Duplicate IP for MX record %s (%s) found"
+
+msgid "No duplicate IP for MX records found"
+msgstr "No duplicate IP for MX records found"
+
+msgid "Finished duplicate IP for MX record test"
+msgstr "Finished duplicate IP for MX record test"
+
+msgid "more info duplicate mx record"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_mx_record_duplicate:start\" target=\"_blank\">About duplicate IP</a>"
+
+
+# MXRecordCNAME
+msgid "MXRecordCNAME"
+msgstr "MX record CNAME"
+
+msgid "Starting CNAME test"
+msgstr "Starting CNAME test"
+
+msgid "%s (%s) is a CNAME"
+msgstr "%s (%s) is a CNAME"
+
+msgid "%s (%s) is not a CNAME"
+msgstr "%s (%s) is not a CNAME"
+
+msgid "Finished CNAME test"
+msgstr "Finished CNAME test"
+
+msgid "more info cname mx record"
+msgstr "For more information: <a href=\"/wiki/doku.php?id=info_mx_record_cname:start\" target=\"_blank\">About CNAME</a>"
+
+
+# ARecord
+msgid "ARecord"
+msgstr "A record"
+
+msgid "Starting A record lookup against %s"
+msgstr "Starting A record lookup against %s"
+
+msgid "%s is not a CNAME, A is %s"
+msgstr "%s is not a CNAME, A is %s"
+
+msgid "%s CNAME is %s"
+msgstr "%s CNAME is %s"
+
+msgid "No A record found for %s"
+msgstr "No A record found for %s"
+
+msgid "A record is missing for %s"
+msgstr "A record is missing for %s"
+
+msgid "Finished A record lookup against %s"
+msgstr "Finished A record lookup against %s"
+
+
+# Connection
+msgid "Connection"
+msgstr "Connection"
+
+msgid "Starting connection test"
+msgstr "Starting connection test"
+
+msgid "Test could not be executed"
+msgstr "Test could not be executed"
+
+msgid "Connection to %s (%s) could not be established"
+msgstr "Connection to %s (%s) could not be established"
+
+msgid "Connection time to %s above %s second (%ss)"
+msgstr "Connection time to %s above %s second (%ss)"
+
+msgid "Connection test against %s (%s) successful in %ss"
+msgstr "Connection test against %s (%s) successful in %ss"
+
+msgid "Could not establish connection with any server"
+msgstr "Could not establish connection with any server"
+
+msgid "All connection times are above %s second"
+msgstr "All connection times are above %s second"
+
+msgid "Finished connection test"
+msgstr "Finished connection test"
+
+msgid "more info connection time"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_connection:start\" target=\"_blank\">About connections</a>"
+
+
+# UserScanning
+msgid "UserScanning"
+msgstr "User scanning"
+
+msgid "Started user scanning test"
+msgstr "Started user scanning test"
+
+msgid "Failed to connect to %s (%s)"
+msgstr "Failed to connect to %s (%s)"
+
+msgid "User scanning %s (%s) failed\n%s"
+msgstr "User scanning %s (%s) failed\n%s"
+
+msgid "No standard greeting on %s (%s)"
+msgstr "No standard greeting on %s (%s)"
+
+msgid "User scanning %s (%s)"
+msgstr "User scanning %s (%s)"
+
+msgid "Finished user scanning test"
+msgstr "Finished user scanning test"
+
+msgid "more info user scanning"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_userscanning:start\" target=\"_blank\">About user scanning</a>"
+
+
+# HostnameGreeting
+msgid "HostnameGreeting"
+msgstr "Hostname greeting"
+
+msgid "Starting hostname greeting test"
+msgstr "Starting hostname greeting test"
+
+msgid "Failed to connect to mail server %s (%s)"
+msgstr "Failed to connect to mail server %s (%s)"
+
+msgid "IP of hostname (%s) in greeting message doesn't match mail server IP (%s)"
+msgstr "IP of hostname (%s) in greeting message doesn't match mail server IP (%s)"
+
+msgid "Valid hostname (%s) found in greeting message"
+msgstr "Valid hostname (%s) found in greeting message"
+
+msgid "Hostname is missing in greeting line"
+msgstr "Hostname is missing in greeting line"
+
+msgid "Failed to resolve hostname in greeting message"
+msgstr "Failed to resolve hostname in greeting message"
+
+msgid "Finished hostname greeting test"
+msgstr "Finished hostname greeting test"
+
+msgid "more info hostname greeting"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_hostname_greeting:start\" target=\"_blank\">About hostname greeting</a>"
+
+
+# LowPort
+msgid "LowPort"
+msgstr "Low port"
+
+msgid "Starting low port test"
+msgstr "Starting low port test"
+
+msgid "Connection against %s (%s) successful from port %s"
+msgstr "Connection against %s (%s) successful from port %s"
+
+msgid "Connection against %s (%s) failed from port %s"
+msgstr "Connection against %s (%s) failed from port %s"
+
+msgid "Finished low port test"
+msgstr "Finished low port test"
+
+msgid "more info low port"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_low_port:start\" target=\"_blank\">About low ports</a>"
+
+
+# MXRecordPTR
+msgid "MXRecordPTR"
+msgstr "MX record PTR"
+
+msgid "Starting test"
+msgstr "Start test"
+
+msgid "Could not find %s record for MX record %s"
+msgstr "Could not find %s record for MX record %s"
+
+msgid "Could not find PTR record for %s"
+msgstr "Could not find PTR record for %s"
+
+msgid "Could not resolve PTR record %s"
+msgstr "Could not resolve PTR record %s"
+
+msgid "PTR record (%s) matches the %s record (%s)"
+msgstr "PTR record (%s) matches the %s record (%s)"
+
+msgid "PTR record does not match the %s record (%s)"
+msgstr "PTR record does not match the %s record (%s)"
+
+msgid "Finished test"
+msgstr "Finished test"
+
+msgid "more info ptr mx record"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_mx_record_ptr:start\" target=\"_blank\">About PTR-record</a>"
+
+
+# OpenRelay
+msgid "OpenRelay"
+msgstr "Open relay"
+
+msgid "Started open relay test"
+msgstr "Started open relay test"
+
+# already declared at 187
+#msgid "Failed to connect to %s (%s)"
+#msgstr "Failed to connect to %s (%s)"
+
+msgid "Starting open relay tests against %s"
+msgstr "Starting open relay tests against %s"
+
+msgid "Warning connection reset by peer.."
+msgstr "Warning connection reset by peer.."
+
+msgid "Warning broken pipe, aborting subtest.."
+msgstr "Warning broken pipe, aborting subtest.."
+
+msgid "Test %s on host %s:\n%s"
+msgstr "Test %s on host %s:\n%s"
+
+msgid "Test %s FAILED on %s:\n%s"
+msgstr "Test %s FAILED on %s:\n%s"
+
+msgid "Finished open relay testing on %s"
+msgstr "Finished open relay testing on %s"
+
+msgid "All %s open relay tests against %s failed"
+msgstr "All %s open relay tests against %s failed"
+
+msgid "One of %s open relay test against %s failed"
+msgstr "One of %s open relay test against %s failed"
+
+msgid "%s of %s open relay tests against %s failed"
+msgstr "%s of %s open relay tests against %s failed"
+
+msgid "Finished open relay test"
+msgstr "Finished open relay test"
+
+# SPF
+msgid "SPF"
+msgstr "SPF"
+
+msgid "Starting SPF-test"
+msgstr "Starting SPF-test"
+
+# already defined
+#msgid "Test could not be executed"
+#msgstr "Test could not be executed"
+
+msgid "SPF-test failed for %s (%s)"
+msgstr "SPF-test failed for %s (%s)"
+
+msgid "SPF-test returned: %s (%s), %s for %s (%s), email: %s"
+msgstr "SPF-test returned: %s (%s), %s for %s (%s), email: %s"
+
+msgid "Could not test any SPF record"
+msgstr "Could not test any SPF record"
+
+msgid "SPF is valid from the server you use to send emails"
+msgstr "SPF is valid from the server you use to send emails"
+
+msgid "SPF is enabled for domain"
+msgstr "SPF is enabled for domain"
+
+msgid "Finished SPF-test"
+msgstr "Finished SPF-test"
+
+msgid "more info spf"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_spf:start\" target=\"_blank\">About SPF-record</a>"
+
+
+# Blacklist
+msgid "Starting Blacklist-test"
+msgstr "Starting Blacklist-test"
+
+msgid "%s (%s) is listed on blacklist %s, result: %s, text: %s."
+msgstr "%s (%s) is listed on blacklist %s, result: %s, text: %s."
+
+msgid "%s (%s) is not listed on blacklist %s."
+msgstr "%s (%s) is not listed on blacklist %s."
+
+msgid "All Blacklist-tests failed!"
+msgstr "All Blacklist-tests failed!"
+
+msgid "Finished Blacklist-test"
+msgstr "Finished Blacklist-test"
+
+msgid "%s, subtest: %s in %s?"
+msgstr "%s, subtest: %s in %s?"
+
+msgid "more info blacklists"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_blacklist:start\" target=\"_blank\">About blacklists</a>"
+
+
+# StartTLS
+msgid "StartTLS"
+msgstr "StartTLS"
+
+msgid "Starting STARTTLS test"
+msgstr "Starting STARTTLS test"
+
+msgid "STARTTLS successful on host %s (%s), %s %s"
+msgstr "STARTTLS successful on host %s (%s), %s %s"
+
+msgid "STARTTLS failed on host %s (%s), %s %s"
+msgstr "STARTTLS failed on host %s (%s), %s %s"
+
+msgid "STARTTLS enabled"
+msgstr "STARTTLS enabled"
+
+msgid "Server %s (%s) disconnected unexpectedly"
+msgstr "Server %s (%s) disconnected unexpectedly"
+
+msgid "Finished STARTTLS test"
+msgstr "Finished STARTTLS test"
+
+msgid "more info starttls"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_starttls:start\" target=\"_blank\">About STARTTLS</a>"
+
+
+# VerifyCert
+msgid "VerifyCert"
+msgstr "Examine and Verify SSL Certificates"
+
+msgid "Starting to verify certificates"
+msgstr "Starting to verify certificates"
+
+msgid "Starting test for host %s (%s)"
+msgstr "Starting test for host %s (%s)"
+
+msgid "NO TLS available for host %s"
+msgstr "NO TLS available for host %s"
+
+msgid "Failed to connect to host %s (%s)"
+msgstr "Failed to connect to host %s (%s)"
+
+msgid "Warning broken pipe.."
+msgstr "Warning broken pipe.."
+
+msgid "Unable to perform handshake on host %s (%s)"
+msgstr "Unable to perform handshake on host %s (%s)"
+
+msgid "Last SSL serial (%s) does not match current (%s)"
+msgstr "Last SSL serial (%s) does not match current (%s)"
+
+msgid "Certificate on host %s (%s) has not been changed for over %s seconds"
+msgstr "Certificate on host %s (%s) has not been changed for over %s seconds"
+
+msgid "Certificate on host %s (%s) has expired (%s)"
+msgstr "Certificate on host %s (%s) has expired (%s)"
+
+msgid "Certificate on host %s (%s) expires within one week (%s)"
+msgstr "Certificate on host %s (%s) expires within one week (%s)"
+
+msgid "Certificate on host %s (%s) expires within one month (%s)"
+msgstr "Certificate on host %s (%s) expires within one month (%s)"
+
+msgid "Certificate on host %s (%s) is not valid before %s"
+msgstr "Certificate on host %s (%s) is not valid before %s"
+
+msgid "Certificate on host %s (%s) is using few bits when encrypting (%s)"
+msgstr "Certificate on host %s (%s) is using few bits when encrypting (%s)"
+
+msgid "Certificate is valid:\n%s"
+msgstr "Certificate is valid:\n%s"
+
+msgid "Test on host %s:\n%s"
+msgstr "Test on host %s:\n%s"
+
+msgid "Serial: %s"
+msgstr "Serial: %s"
+
+msgid "Bits: %s"
+msgstr "Bits: %s"
+
+msgid "Not After: %s"
+msgstr "Not After: %s"
+
+msgid "Not Before: %s"
+msgstr "Not Before: %s"
+
+msgid "Country Name: %s"
+msgstr "Country Name: %s"
+
+msgid "State Or Province Name: %s"
+msgstr "State Or Province Name: %s"
+
+msgid "Locality Name: %s"
+msgstr "Locality Name: %s"
+
+msgid "Organization Name: %s"
+msgstr "Organization Name: %s"
+
+msgid "Organizational Unit Name: %s"
+msgstr "Organizational Unit Name: %s"
+
+msgid "CommonName: %s"
+msgstr "Common Name: %s"
+
+msgid "Email: %s"
+msgstr "Email: %s"
+
+msgid "PEM:\n%s"
+msgstr "PEM:\n%s"
+
+msgid "Test FAILED on %s:\n%s"
+msgstr "Test FAILED on %s:\n%s"
+
+msgid "Finished test for host %s (%s)"
+msgstr "Finished test for host %s (%s)"
+
+msgid "Finished certificates verification-test"
+msgstr "Finished certificates verification-test"
+
+
+# StandardAddresses
+msgid "StandardAddresses"
+msgstr "Standard addresses"
+
+msgid "Started standard addresses test"
+msgstr "Started standard addresses test"
+
+msgid "Standard addresses on %s (%s) failed\n%s"
+msgstr "Standard addresses on %s (%s) failed\n%s"
+
+msgid "%s (%s) answering \"250\"."
+msgstr "%s (%s) answering \"250\"."
+
+msgid "Standard addresses on %s (%s) completed."
+msgstr "Standard addresses on %s (%s) completed."
+
+msgid "Finished standard addresses test"
+msgstr "Finished standard addresses test"
+
+msgid "more info verifycert"
+msgstr "For more information see: <a href=\"/wiki/doku.php?id=info_verifycert:start\" target=\"_blank\">About SSL-certificates</a>"

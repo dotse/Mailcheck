@@ -1,0 +1,6 @@
+adns-python
+dnspython
+IPy
+pydns
+pyspf
+http://launchpad.net/pydkim/trunk/0.5/+download/pydkim-0.5.tar.gz

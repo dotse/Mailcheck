@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Pretty URL for regular results
+RewriteRule ^result/([0-9]+)-([a-z0-9]+) /test.php?time=$1&id=$2&%{QUERY_STRING} [NC]
+# Pretty URL for secret results
+RewriteRule ^result/([a-z0-9]+) /test.php?id=$1&%{QUERY_STRING} [NC]
+
+# Force https when going to admin
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^admin/.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R]
+
+# Maintenance rewrite
+#RewriteRule !\.(js|ico|gif|jpg|png|css|swf|txt)$ index.php
+
