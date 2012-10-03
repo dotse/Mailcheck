@@ -30,7 +30,8 @@ class StartTLS(Plugin):
 			success = False
 			try:
 				server = smtplib.SMTP(host)
-				server.ehlo(host)
+				hostname = socket.gethostbyaddr(socket.gethostname())[0]
+				server.ehlo(hostname)
 			except smtplib.SMTPServerDisconnected:
 				self.result.warning("Server %s (%s) disconnected unexpectedly", (host, ip))
 				continue
