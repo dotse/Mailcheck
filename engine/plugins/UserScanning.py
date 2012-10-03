@@ -26,6 +26,7 @@ class UserScanning(Plugin):
 		self.result.info('Started user scanning test')
 
 		testResult = []
+		mx_counter252 = 0
 		for row in records['mx_record']:
 			host = row['host']
 			ip = row['ip']
@@ -103,13 +104,15 @@ class UserScanning(Plugin):
 			testResult.append(error)
 
 			if counter252 == 2:
-				self.result.goldstar("%s (%s) answering \"252\" which is good for avoiding spam, see http://cr.yp.to/smtp/vrfy.html for more information.", (host, ip))
+				mx_counter252 += 1
 
 			if error:
 				self.result.warning("User scanning %s (%s) failed\n%s", (host,ip,testlog))
 			else:
 				self.result.info('User scanning %s (%s) completed', (host,ip))
 
+		if mx_counter252 > 0:
+			self.result.goldstar('At least one MX host answers "252" which is good for avoiding spam, see http://cr.yp.to/smtp/vrfy.html for more information.')
 
 		self.result.extra('more info user scanning', type='adv')
 
